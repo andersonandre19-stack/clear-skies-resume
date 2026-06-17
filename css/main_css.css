@@ -302,5 +302,11 @@ a{color:$linkColor; text-decoration:none;}
     height: auto;
   }
   
+  .left-sidebar, .right-content {
+    width: 100%;
+    float: none; /* If using older float layouts */
+    margin-bottom: 20px;
+  }
+  
 }
 
