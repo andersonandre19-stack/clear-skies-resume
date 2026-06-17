@@ -274,3 +274,33 @@ a{color:$linkColor; text-decoration:none;}
 @keyframes skill_5 {from {width:0%;}to {width:70%;}}  
 @keyframes skill_6 {from {width:0%;}to {width:70%;}}
 @keyframes skill_7 {from {width:0%;}to {width:70%;}}
+
+
+
+/* Mobile Styles (Triggers on screens 768px wide or smaller) */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Reset multi-column layouts into a single column */
+  .container, .row, .grid-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* 2. Shrink large headings so they don't break lines awkwardly */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* 3. Ensure images (like headshots) never overflow the screen */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
