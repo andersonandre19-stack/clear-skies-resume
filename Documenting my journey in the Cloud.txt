@@ -16,3 +16,10 @@ From here, I set up an Azure Static Web App. I actually started this process by 
 
  After allowing Azure to read my repository, I deployed the web page.
 
+
+
+Day 5
+Turns out I totally forgot to upload html to GitHub and the deployment was disappointing with the error message I saw. So I learned how to push my files to the repository via the CLI on my desktop. Once I made it look halfway decent, I uploaded my CSS file and formatted it to make the web page look decent on mobile.
+
+
+Day 6
