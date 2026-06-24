@@ -44,7 +44,7 @@ def GetResumeCounter(req: func.HttpRequest, counterInput: func.DocumentList, cou
         status_code=200,
         mimetype="application/json",
         headers={
-            "Access-Control-Allow-Origin": "https://azurestaticapps.net",
+            "Access-Control-Allow-Origin": "https://lemon-river-07219a910.7.azurestaticapps.net",
             "Access-Control-Allow-Methods": "GET",
             "Access-Control-Allow-Headers": "Content-Type"
         }
