@@ -141,5 +141,21 @@
   	</div>
   </section>
   
+<script>
+
+  const apiURL = '/api/GetResumeCounter'; 
+
+  async function getCounter() {
+      try {
+          const response = await fetch(apiURL);
+          const data = await response.json();
+          document.getElementById('counter').innerText = data.count;
+      } catch (error) {
+          console.error("Could not fetch visitor count:", error);
+      }
+  }
+  window.addEventListener('DOMContentLoaded', getCounter);
+</script>
+
   <div class="clearfix"></div>
 </div>
