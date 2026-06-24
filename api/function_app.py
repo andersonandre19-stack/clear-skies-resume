@@ -42,5 +42,10 @@ def GetResumeCounter(req: func.HttpRequest, counterInput: func.DocumentList, cou
     return func.HttpResponse(
         body=json.dumps({"count": current_counter["count"]}),
         status_code=200,
-        mimetype="application/json"
+        mimetype="application/json",
+        headers={
+            "Access-Control-Allow-Origin": "https://azurestaticapps.net",
+            "Access-Control-Allow-Methods": "GET",
+            "Access-Control-Allow-Headers": "Content-Type"
+        }
     )
