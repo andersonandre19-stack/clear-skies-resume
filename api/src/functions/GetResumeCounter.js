@@ -22,10 +22,7 @@ app.http('GetResumeCounter', {
             // 4. Return using the v4 jsonBody parameter to enforce clean API transmission
             return {
                 status: 200,
-                headers: { 
-                    "Access-Control-Allow-Origin": "*"
-                },
-                jsonBody: { count: item.count } // 👈 SWITCHED FROM body TO jsonBody
+                jsonBody: { count: item.count } 
             };
         } catch (error) {
             context.log(`Database Error: ${error.message}`);
