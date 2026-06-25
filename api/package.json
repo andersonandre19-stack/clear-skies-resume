@@ -1,9 +1,0 @@
-{
-  "name": "resume-api",
-  "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "@azure/cosmos": "^4.0.0",
-    "@azure/functions": "^4.0.0"
-  }
-}
