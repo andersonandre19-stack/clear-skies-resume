@@ -1,5 +1,5 @@
-const { app } = require('@azure/functions');
-const { CosmosClient } = require('@azure/cosmos');
+import { app } from '@azure/functions';
+import { CosmosClient } from '@azure/cosmos';
 
 // Connect to your Cosmos DB database using your Azure environment variable
 const client = new CosmosClient(process.env.CosmosDbConnectionString);
